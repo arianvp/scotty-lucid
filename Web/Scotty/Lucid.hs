@@ -1,9 +1,9 @@
+{-#LANGUAGE OverloadedStrings #-}
 module Web.Scotty.Lucid where
-import           Network.Wai
-import qualified Control.Monad.State as MS
+import           Web.Scotty
 import           Lucid
 
-lucid :: Html a -> ActionM a
+lucid :: Html a -> ActionM ()
 lucid h = do
-  header "Content-Type" "text/html"
-  MS.modify . setContent .  runIdentity . execHtml $ h
+  setHeader "Content-Type" "text/html"
+  raw . renderBS  $ h

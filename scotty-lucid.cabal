@@ -17,7 +17,7 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-  -- exposed-modules:     
+  exposed-modules:     Web.Scotty.Lucid
   -- other-modules:       
   -- other-extensions:    
   build-depends: base          >= 4 && <5,
