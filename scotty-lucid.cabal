@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                scotty-lucid
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            lucid integration for Scotty
 -- description:         
 homepage:            http://github.com/scotty-lucid
@@ -24,5 +24,5 @@ library
                  scotty        >= 0.4,
                  wai           >= 1.2,
                  mtl           >= 2,
-                 lucid         >= 1.0 && <2.0
+                 lucid         >= 1.0 && <3.0
   default-language: Haskell98
